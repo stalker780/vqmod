@@ -548,7 +548,7 @@ class VQModLog {
 	 * @return null
 	 * @description Adds error to log object ready to be output
 	 */
-	public function write($data, VQModObject $obj = NULL) {
+	public function write($data, ?VQModObject $obj = NULL) {
 		if($obj) {
 			$hash = sha1($obj->id);
 		} else {
